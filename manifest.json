@@ -1,0 +1,17 @@
+{
+  "name": "web-extension",
+  "version": "1.0",
+  "description": "Extension",
+  "manifest_version": 3,
+  "permissions": ["activeTab"],
+  "action": {
+    "default_icon" : "img/icon.png",
+    "default_title": "options"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
